@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1">
+    <xs:element name="database">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="experts" maxOccurs="1" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="expert" maxOccurs="unbounded" type="expert-type"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="topics"  maxOccurs="1" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="topic" maxOccurs="unbounded" type="topic-type"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="recomendations"  maxOccurs="1" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="recomendation" maxOccurs="unbounded"
+                                type="recomendation-type"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="uniqueTopicID">
+            <xs:selector xpath="./topics/topic/name"/>
+            <xs:field xpath="."/>
+        </xs:key>
+        <xs:key name="uniqueExpertID">
+            <xs:selector xpath="./experts/expert/name"/>
+            <xs:field xpath="."/>
+        </xs:key>
+        <xs:keyref refer="uniqueTopicID" name="uniqueTopicIDRef">
+            <xs:selector xpath="./experts/expert"/>
+            <xs:field xpath="expertof"/>
+        </xs:keyref>
+        <xs:keyref refer="uniqueTopicID" name="subtopicIDRef">
+            <xs:selector xpath="./topics/topic"/>
+            <xs:field xpath="subtopicof"/>
+        </xs:keyref>
+        <xs:keyref refer="uniqueExpertID" name="fromExpertRef">
+            <xs:selector xpath="./recomendations/recomendation"/>
+            <xs:field xpath="from"/>
+        </xs:keyref>
+        <xs:keyref refer="uniqueExpertID" name="toExpertRef">
+            <xs:selector xpath="./recomendations/recomendation"/>
+            <xs:field xpath="to"/>
+        </xs:keyref>
+    </xs:element>
+    
+    <xs:complexType name="expert-type">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="expertof" type="xs:string" maxOccurs="unbounded" minOccurs="0">
+
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="topic-type">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="text" type="xs:string"/>
+            <xs:element name="originator" type="xs:string"/>
+            <xs:element name="subtopicof" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="recomendation-type">
+        <xs:sequence>
+            <xs:element name="from" type="xs:string"/>
+            <xs:element name="to" type="xs:string"/>
+            <xs:element name="justification" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

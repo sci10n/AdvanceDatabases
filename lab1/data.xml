@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:schema.xsd">
+
+<experts>
+    <expert>
+        <name>Maxwell</name>
+        <email>Maxx@gmail.com</email>
+        <description>HelloWorld</description>
+        <expertof>Geology</expertof>
+    </expert>
+    <expert>
+        <name>Clark Kent</name>
+        <email>C.Kent@DailyMail.co.uk</email>
+        <description>HelloWorld</description>
+		<expertof>Geology</expertof>
+    </expert>
+    <expert>
+        <name>Mr. Smith</name>
+        <email>Smith@example.com</email>
+        <description>HelloWorld</description>
+        <expertof>Geology</expertof>
+    </expert>
+</experts>
+    <topics>
+        <topic>
+            <name>Geology</name>
+            <text> Study of rocks</text>
+            <originator>Maxwell</originator>
+        </topic>
+        <topic>
+            <name>Advanced Geology</name>
+            <text> Study of advanced rocks</text>
+            <originator>Maxwell</originator>
+            <subtopicof>Geology</subtopicof>
+        </topic>
+        <topic>
+            <name>Physics</name>
+            <text>Forces and matter</text>
+            <originator>Clark Kent</originator>
+        </topic>
+        <topic>
+            <name>Electricity</name>
+            <text>Bzzz</text>
+            <originator>Mr. Smith</originator>
+        </topic>
+    </topics>
+    <recomendations>
+        <recomendation>
+            <from>Maxwell</from>
+            <to>Clark Kent</to>
+            <justification>Study advanced geology</justification>
+        </recomendation>
+        <recomendation>
+            <from>Maxwell</from>
+            <to>Mr. Smith</to>
+            <justification>Drop study geology</justification>
+        </recomendation>
+        <recomendation>
+            <from>Clark Kent</from>
+            <to>Mr. Smith</to>
+            <justification>Start with Bzzz</justification>
+        </recomendation>
+    </recomendations>
+</database>
