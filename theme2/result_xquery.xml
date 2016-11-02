@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<res>
+   <recomendation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <from>Maxwell</from>
+            <to>Clark Kent</to>
+            <justification>Study advanced geology</justification>
+        </recomendation>
+   <recomendation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <from>Maxwell</from>
+            <to>Mr. Smith</to>
+            <justification>Drop study geology</justification>
+        </recomendation>false
+
+
+Experts of Geology
+<expert xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <name>Maxwell</name>
+        <email>Maxx@gmail.com</email>
+        <description>HelloWorld</description>
+        <expertof>Geology</expertof>
+    </expert>
+   <expert xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <name>Clark Kent</name>
+        <email>C.Kent@DailyMail.co.uk</email>
+        <description>HelloWorld</description>
+		    <expertof>Geology</expertof>
+    </expert>
+   <expert xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <name>Mr. Smith</name>
+        <email>Smith@example.com</email>
+        <description>HelloWorld</description>
+        <expertof>Geology</expertof>
+    </expert>
+   <expert xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <name>Test Testsson</name>
+        <email>test.testsson@liu.se</email>
+        <description>He is an expert in geology</description>
+        <expertof>Geology</expertof>
+    </expert>
+Subtopics of Geology
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <name>Advanced Geology</name>
+            <text> Study of advanced rocks</text>
+            <originator>Maxwell</originator>
+            <subtopicof>Geology</subtopicof>
+        </topic>
+Experts of Geology recomended by maxwell
+<name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Clark Kent</name>
+   <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Mr. Smith</name>
+
+Expert of Geology that are recomended by experts that are recomended by experts
+<expert xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <name>Mr. Smith</name>
+        <email>Smith@example.com</email>
+        <description>HelloWorld</description>
+        <expertof>Geology</expertof>
+    </expert>
+   <expert xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <name>Test Testsson</name>
+        <email>test.testsson@liu.se</email>
+        <description>He is an expert in geology</description>
+        <expertof>Geology</expertof>
+    </expert>
+
+
+Expert of Geology that are recommended by experts that are recommended by experts ...
+<expert xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <name>Test Testsson</name>
+        <email>test.testsson@liu.se</email>
+        <description>He is an expert in geology</description>
+        <expertof>Geology</expertof>
+    </expert>
+
+Experts:
+<expert xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <name>Maxwell</name>
+        <email>Maxx@gmail.com</email>
+        <description>HelloWorld</description>
+        <expertof>Geology</expertof>
+    </expert>
+   <expert xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <name>Clark Kent</name>
+        <email>C.Kent@DailyMail.co.uk</email>
+        <description>HelloWorld</description>
+		    <expertof>Geology</expertof>
+    </expert>
+   <expert xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <name>Mr. Smith</name>
+        <email>Smith@example.com</email>
+        <description>HelloWorld</description>
+        <expertof>Geology</expertof>
+    </expert>
+   <expert xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <name>Test Testsson</name>
+        <email>test.testsson@liu.se</email>
+        <description>He is an expert in geology</description>
+        <expertof>Geology</expertof>
+    </expert>
+   <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <name>Geology</name>
+            <text> Study of rocks</text>
+            <originator>Maxwell</originator>
+        </topic>
+   <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <name>Advanced Geology</name>
+            <text> Study of advanced rocks</text>
+            <originator>Maxwell</originator>
+            <subtopicof>Geology</subtopicof>
+        </topic>
+   <recomendation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <from>Maxwell</from>
+            <to>Clark Kent</to>
+            <justification>Study advanced geology</justification>
+        </recomendation>
+   <recomendation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <from>Maxwell</from>
+            <to>Mr. Smith</to>
+            <justification>Drop study geology</justification>
+        </recomendation>
+</res>

@@ -1,0 +1,101 @@
+Class: http://www.owl-ontologies.com/unnamed.owl#Publication
+
+  Class: http://www.owl-ontologies.com/unnamed.owl#Artical
+
+    Class: http://www.owl-ontologies.com/unnamed.owl#JournalArticle
+
+    Class: http://www.owl-ontologies.com/unnamed.owl#TechnicalReport
+
+    Class: http://www.owl-ontologies.com/unnamed.owl#ConferencePaper
+
+  Class: http://www.owl-ontologies.com/unnamed.owl#Specification
+
+  Class: http://www.owl-ontologies.com/unnamed.owl#Book
+
+  Class: http://www.owl-ontologies.com/unnamed.owl#Manual
+
+  Class: http://www.owl-ontologies.com/unnamed.owl#UnofficialPublication
+
+  Class: http://www.owl-ontologies.com/unnamed.owl#Software
+
+Class: http://www.owl-ontologies.com/unnamed.owl#Organization
+
+  Class: http://www.owl-ontologies.com/unnamed.owl#School
+
+  Class: http://www.owl-ontologies.com/unnamed.owl#Department
+      Instance: http://www.owl-ontologies.com/unnamed.owl#IDA
+
+  Class: http://www.owl-ontologies.com/unnamed.owl#Program
+
+  Class: http://www.owl-ontologies.com/unnamed.owl#Institute
+
+  Class: http://www.owl-ontologies.com/unnamed.owl#ResearchGroup
+      Instance: http://www.owl-ontologies.com/unnamed.owl#ADIT
+      Instance: http://www.owl-ontologies.com/unnamed.owl#SAS
+      Instance: http://www.owl-ontologies.com/unnamed.owl#AIICS
+      Instance: http://www.owl-ontologies.com/unnamed.owl#HCS
+
+  Class: http://www.owl-ontologies.com/unnamed.owl#University
+      Instance: http://www.owl-ontologies.com/unnamed.owl#Linköping_Universitet
+
+Class: http://www.owl-ontologies.com/unnamed.owl#Person
+
+  Class: http://www.owl-ontologies.com/unnamed.owl#Student
+
+    Class: http://www.owl-ontologies.com/unnamed.owl#UndergraduateStudent
+        Instance: http://www.owl-ontologies.com/unnamed.owl#Harry_Potter
+
+    Class: http://www.owl-ontologies.com/unnamed.owl#GraduateStudent
+
+  Class: http://www.owl-ontologies.com/unnamed.owl#Worker
+
+    Class: http://www.owl-ontologies.com/unnamed.owl#Assistant
+
+      Class: http://www.owl-ontologies.com/unnamed.owl#TeachingAssistant
+
+      Class: http://www.owl-ontologies.com/unnamed.owl#ResearchAssistant
+
+    Class: http://www.owl-ontologies.com/unnamed.owl#Faculty
+
+      Class: http://www.owl-ontologies.com/unnamed.owl#Professor
+
+        Class: http://www.owl-ontologies.com/unnamed.owl#VisitingProfessor
+
+        Class: http://www.owl-ontologies.com/unnamed.owl#Dean
+
+        Class: http://www.owl-ontologies.com/unnamed.owl#AssociateProfessor
+            Instance: http://www.owl-ontologies.com/unnamed.owl#Patrick
+
+        Class: http://www.owl-ontologies.com/unnamed.owl#Chair
+
+        Class: http://www.owl-ontologies.com/unnamed.owl#FullProfessor
+
+        Class: http://www.owl-ontologies.com/unnamed.owl#AssistantProfessor
+
+      Class: http://www.owl-ontologies.com/unnamed.owl#PostDoc
+
+        Class: http://www.owl-ontologies.com/unnamed.owl#Lecturer
+
+    Class: http://www.owl-ontologies.com/unnamed.owl#AdministrativeStaff
+
+      Class: http://www.owl-ontologies.com/unnamed.owl#Dean
+
+      Class: http://www.owl-ontologies.com/unnamed.owl#SystemStaff
+
+      Class: http://www.owl-ontologies.com/unnamed.owl#Chair
+
+      Class: http://www.owl-ontologies.com/unnamed.owl#ClericalStaff
+
+      Class: http://www.owl-ontologies.com/unnamed.owl#Director
+
+Class: http://www.owl-ontologies.com/unnamed.owl#Work
+
+  Class: http://www.owl-ontologies.com/unnamed.owl#Research
+      Instance: http://www.owl-ontologies.com/unnamed.owl#SemanticWeb
+      Instance: http://www.owl-ontologies.com/unnamed.owl#Ontologies
+      Instance: http://www.owl-ontologies.com/unnamed.owl#Database
+
+  Class: http://www.owl-ontologies.com/unnamed.owl#Course
+      Instance: http://www.owl-ontologies.com/unnamed.owl#TDDD43
+      Instance: http://www.owl-ontologies.com/unnamed.owl#TDDB84
+

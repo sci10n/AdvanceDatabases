@@ -20,6 +20,12 @@
         <description>HelloWorld</description>
         <expertof>Geology</expertof>
     </expert>
+    <expert>
+        <name>Test Testsson</name>
+        <email>test.testsson@liu.se</email>
+        <description>He is an expert in geology</description>
+        <expertof>Geology</expertof>
+    </expert>
 </experts>
     <topics>
         <topic>
@@ -42,6 +48,7 @@
             <name>Electricity</name>
             <text>Bzzz</text>
             <originator>Mr. Smith</originator>
+			<subtopicof>Physics</subtopicof>
         </topic>
     </topics>
     <recomendations>
@@ -59,6 +66,11 @@
             <from>Clark Kent</from>
             <to>Mr. Smith</to>
             <justification>Start with Bzzz</justification>
+        </recomendation>
+        <recomendation>
+            <from>Mr. Smith</from>
+            <to>Test Testsson</to>
+            <justification>Bla bla</justification>
         </recomendation>
     </recomendations>
 </database>

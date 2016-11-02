@@ -1,0 +1,3 @@
+Questions
+=========
+3) We found SQL to be the easiest to work with because we've worked with it in previous courses. The syntax of XQuery was more compact and was better to work with for more complex queries. SQL was better for less complicated queries.

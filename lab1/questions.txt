@@ -1,6 +1,0 @@
-Questions
-=========
-2) The problem can be modelled in the way represented in the file "schema.xsd". In the model we decided on using elements instead of attributes. This way it's "cleaner" to add multiple children of the same type. We decided to use keys and keyrefs on all places it made sense in the model to allow for constraint checking when the tree is parsed.
-4) The relational model fitted the data model better than the XML one since the data had a rigid structure. If the data model would've contained less structured data the XML model would have been the model of choice. '
-5) One way the data can be combined is to use the relational model to query the structured data such as experts and topics with SQL and the less structured data such as subtopics and what topics experts are experts in using the XML model. One way to store the combined model is to store the XML model inside the relational database using the declare feature. 
- 
