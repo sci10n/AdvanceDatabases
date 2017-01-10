@@ -1,0 +1,3 @@
+#!/bin/bash
+hdfs dfs -rm -r output
+hadoop com.sun.tools.javac.Main TextPair.java JoinMain.java JoinMapper1.java JoinMapper2.java JoinReducer.java && jar cf JoinMain.jar *.class && hadoop jar JoinMain.jar JoinMain input/sbml.model.listOfReactions.reaction.listOfProducts.speciesReference.attributes input/sbml.model.listOfReactions.reaction.listOfReactants.speciesReference.attributes output && hdfs dfs -ls output

@@ -1,0 +1,79 @@
+Deleted output
+2017-01-10 17:38:58,451 INFO  [main] client.RMProxy (RMProxy.java:createRMProxy(98)) - Connecting to ResourceManager at heffa-head.local/10.56.10.1:8032
+2017-01-10 17:38:58,907 INFO  [main] hdfs.DFSClient (DFSClient.java:getDelegationToken(1085)) - Created token for x_mares: HDFS_DELEGATION_TOKEN owner=x_mares@HEFFA.NSC.LIU.SE, renewer=yarn, realUser=, issueDate=1484066338851, maxDate=1484671138851, sequenceNumber=8333, masterKeyId=225 on 10.56.10.1:8020
+2017-01-10 17:38:58,921 INFO  [main] security.TokenCache (TokenCache.java:obtainTokensForNamenodesInternal(144)) - Got dt for hdfs://namenode:8020; Kind: HDFS_DELEGATION_TOKEN, Service: 10.56.10.1:8020, Ident: (token for x_mares: HDFS_DELEGATION_TOKEN owner=x_mares@HEFFA.NSC.LIU.SE, renewer=yarn, realUser=, issueDate=1484066338851, maxDate=1484671138851, sequenceNumber=8333, masterKeyId=225)
+2017-01-10 17:38:59,307 INFO  [main] input.FileInputFormat (FileInputFormat.java:listStatus(283)) - Total input paths to process : 1
+2017-01-10 17:38:59,330 INFO  [main] input.FileInputFormat (FileInputFormat.java:listStatus(283)) - Total input paths to process : 1
+2017-01-10 17:38:59,474 INFO  [main] mapreduce.JobSubmitter (JobSubmitter.java:submitJobInternal(202)) - number of splits:2
+2017-01-10 17:38:59,618 INFO  [main] mapreduce.JobSubmitter (JobSubmitter.java:printTokens(291)) - Submitting tokens for job: job_1480054079344_5716
+2017-01-10 17:38:59,619 INFO  [main] mapreduce.JobSubmitter (JobSubmitter.java:printTokens(293)) - Kind: HDFS_DELEGATION_TOKEN, Service: 10.56.10.1:8020, Ident: (token for x_mares: HDFS_DELEGATION_TOKEN owner=x_mares@HEFFA.NSC.LIU.SE, renewer=yarn, realUser=, issueDate=1484066338851, maxDate=1484671138851, sequenceNumber=8333, masterKeyId=225)
+2017-01-10 17:39:00,010 INFO  [main] impl.YarnClientImpl (YarnClientImpl.java:submitApplication(260)) - Submitted application application_1480054079344_5716
+2017-01-10 17:39:00,055 INFO  [main] mapreduce.Job (Job.java:submit(1311)) - The url to track the job: http://heffa-head.local:18042/proxy/application_1480054079344_5716/
+2017-01-10 17:39:00,056 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1356)) - Running job: job_1480054079344_5716
+2017-01-10 17:39:07,327 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1377)) - Job job_1480054079344_5716 running in uber mode : false
+2017-01-10 17:39:07,328 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1384)) -  map 0% reduce 0%
+2017-01-10 17:39:12,396 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1384)) -  map 50% reduce 0%
+2017-01-10 17:39:14,416 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1384)) -  map 100% reduce 0%
+2017-01-10 17:39:17,433 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1384)) -  map 100% reduce 100%
+2017-01-10 17:39:17,452 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1395)) - Job job_1480054079344_5716 completed successfully
+2017-01-10 17:39:17,582 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1402)) - Counters: 51
+        File System Counters
+                FILE: Number of bytes read=1317
+                FILE: Number of bytes written=366128
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=2242
+                HDFS: Number of bytes written=320
+                HDFS: Number of read operations=9
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=2
+        Job Counters
+                Killed map tasks=1
+                Launched map tasks=2
+                Launched reduce tasks=1
+                Data-local map tasks=1
+                Rack-local map tasks=1
+                Total time spent by all maps in occupied slots (ms)=14578
+                Total time spent by all reduces in occupied slots (ms)=11636
+                Total time spent by all map tasks (ms)=7289
+                Total time spent by all reduce tasks (ms)=2909
+                Total vcore-seconds taken by all map tasks=7289
+                Total vcore-seconds taken by all reduce tasks=2909
+                Total megabyte-seconds taken by all map tasks=29855744
+                Total megabyte-seconds taken by all reduce tasks=23830528
+        Map-Reduce Framework
+                Map input records=60
+                Map output records=45
+                Map output bytes=1221
+                Map output materialized bytes=1323
+                Input split bytes=609
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=20
+                Reduce shuffle bytes=1323
+                Reduce input records=45
+                Reduce output records=20
+                Spilled Records=90
+                Shuffled Maps =2
+                Failed Shuffles=0
+                Merged Map outputs=2
+                GC time elapsed (ms)=188
+                CPU time spent (ms)=2760
+                Physical memory (bytes) snapshot=1068929024
+                Virtual memory (bytes) snapshot=19116204032
+                Total committed heap usage (bytes)=1240465408
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters
+                Bytes Read=0
+        File Output Format Counters
+                Bytes Written=320
+Found 2 items
+-rw-r--r--   3 x_mares x_mares          0 2017-01-10 17:39 output/_SUCCESS
+-rw-r--r--   3 x_mares x_mares        320 2017-01-10 17:39 output/part-r-00000
