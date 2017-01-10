@@ -1,13 +1,4 @@
 Deleted output
-2017-01-10 17:38:58,451 INFO  [main] client.RMProxy (RMProxy.java:createRMProxy(98)) - Connecting to ResourceManager at heffa-head.local/10.56.10.1:8032
-2017-01-10 17:38:58,907 INFO  [main] hdfs.DFSClient (DFSClient.java:getDelegationToken(1085)) - Created token for x_mares: HDFS_DELEGATION_TOKEN owner=x_mares@HEFFA.NSC.LIU.SE, renewer=yarn, realUser=, issueDate=1484066338851, maxDate=1484671138851, sequenceNumber=8333, masterKeyId=225 on 10.56.10.1:8020
-2017-01-10 17:38:58,921 INFO  [main] security.TokenCache (TokenCache.java:obtainTokensForNamenodesInternal(144)) - Got dt for hdfs://namenode:8020; Kind: HDFS_DELEGATION_TOKEN, Service: 10.56.10.1:8020, Ident: (token for x_mares: HDFS_DELEGATION_TOKEN owner=x_mares@HEFFA.NSC.LIU.SE, renewer=yarn, realUser=, issueDate=1484066338851, maxDate=1484671138851, sequenceNumber=8333, masterKeyId=225)
-2017-01-10 17:38:59,307 INFO  [main] input.FileInputFormat (FileInputFormat.java:listStatus(283)) - Total input paths to process : 1
-2017-01-10 17:38:59,330 INFO  [main] input.FileInputFormat (FileInputFormat.java:listStatus(283)) - Total input paths to process : 1
-2017-01-10 17:38:59,474 INFO  [main] mapreduce.JobSubmitter (JobSubmitter.java:submitJobInternal(202)) - number of splits:2
-2017-01-10 17:38:59,618 INFO  [main] mapreduce.JobSubmitter (JobSubmitter.java:printTokens(291)) - Submitting tokens for job: job_1480054079344_5716
-2017-01-10 17:38:59,619 INFO  [main] mapreduce.JobSubmitter (JobSubmitter.java:printTokens(293)) - Kind: HDFS_DELEGATION_TOKEN, Service: 10.56.10.1:8020, Ident: (token for x_mares: HDFS_DELEGATION_TOKEN owner=x_mares@HEFFA.NSC.LIU.SE, renewer=yarn, realUser=, issueDate=1484066338851, maxDate=1484671138851, sequenceNumber=8333, masterKeyId=225)
-2017-01-10 17:39:00,010 INFO  [main] impl.YarnClientImpl (YarnClientImpl.java:submitApplication(260)) - Submitted application application_1480054079344_5716
 2017-01-10 17:39:00,055 INFO  [main] mapreduce.Job (Job.java:submit(1311)) - The url to track the job: http://heffa-head.local:18042/proxy/application_1480054079344_5716/
 2017-01-10 17:39:00,056 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1356)) - Running job: job_1480054079344_5716
 2017-01-10 17:39:07,327 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1377)) - Job job_1480054079344_5716 running in uber mode : false
@@ -74,6 +65,3 @@ Deleted output
                 Bytes Read=0
         File Output Format Counters
                 Bytes Written=320
-Found 2 items
--rw-r--r--   3 x_mares x_mares          0 2017-01-10 17:39 output/_SUCCESS
--rw-r--r--   3 x_mares x_mares        320 2017-01-10 17:39 output/part-r-00000
